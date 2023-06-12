@@ -1,0 +1,55 @@
+
+.playout {
+  display: grid; 
+   grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 25px;
+  background-color: #8945c0;
+  padding: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.playout > div {
+  background-color: rgba(246, 230, 247, 0.8);
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.pheader { grid-area: header; 
+color: #ffffff;
+text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+.lnavbar { grid-area: menu; 
+min-width: 250px;
+}
+
+.pmain { grid-area: main; 
+text-align: left;
+}
+
+.pright { grid-area: right;
+min-width: 250px;
+padding-top: 500px;
+}
+
+button {
+  background-color: #8945c0; 
+}
+.pfooter { grid-area: footer; }
+
+.btn-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-yellow);
+  --bs-btn-bg: var(--bd-white-bg);
+  --bs-btn-border-color: var(--bd-black-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+}
